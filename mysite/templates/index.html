@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -5,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
 
         <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -40,13 +41,14 @@
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>WEL</span><br>COME</h1>
+                    <h1 class="home__title"><span>{{home_section.welcome_text}}</h1>
+                        
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Keep Scrolling</a>
                     </div>
 
-                    <img src="assets/img/bestpic-removebg-preview.png" alt="" class="home__img">
+                    <img src="{% static 'assets/img/bestpic-removebg-preview.png' %}" alt="" class="home__img">
                 </div>
             </section>
             
@@ -56,7 +58,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="skills__img">
-                        <img src="assets/img/bestpic-removebg-preview.png" alt="">
+                        <img src="{% static 'assets/img/bestpic-removebg-preview.png' %}" alt="">
                     </div>
 
                     <div>
@@ -102,7 +104,7 @@
                     </div>
 
                     <div class="skills__img">
-                        <img src="assets/img/bestpic-removebg-preview.png" alt="">
+                        <img src="{% static 'assets/img/bestpic-removebg-preview.png' %}" alt="">
                     </div>
                 </div>
             </section>
@@ -113,7 +115,7 @@
 
                 <div class="portfolio__container bd-grid">
                     <div class="portfolio__img">
-                        <img src="assets/img/website1.jpg" alt="">
+                        <img src="{% static 'assets/img/website1.jpg' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
@@ -122,7 +124,7 @@
 
 
                     <div class="portfolio__img">
-                        <img src="assets/img/website2.jpg" alt="">
+                        <img src="{% static 'assets/img/website2.jpg' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
@@ -131,7 +133,7 @@
 
 
                     <div class="portfolio__img">
-                        <img src="assets/img/website3.jpg" alt="">
+                        <img src="{% static 'assets/img/website3.jpg' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
@@ -140,7 +142,7 @@
 
                     
                     <div class="portfolio__img">
-                        <img src="assets/img/website4.avif" alt="">
+                        <img src="{% static 'assets/img/website4.avif' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
@@ -149,7 +151,7 @@
 
 
                     <div class="portfolio__img">
-                        <img src="assets/img/website5.jpg" alt="">
+                        <img src="{% static 'assets/img/website5.jpg' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>
@@ -158,7 +160,7 @@
 
 
                     <div class="portfolio__img">
-                        <img src="assets/img/website6.jpg" alt="">
+                        <img src="{% static 'assets/img/website6.jpg' %}" alt="">
 
                         <div class="portfolio__link">
                             <a href="#" class="portfolio__link-name">View details</a>

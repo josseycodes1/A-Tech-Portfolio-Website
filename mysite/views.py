@@ -5,6 +5,7 @@ from django.shortcuts import render
 from .models import HomeSection, AboutSection, SkillCategory, PortfolioItem
 
 def index(request):
+    
     home_section = HomeSection.objects.first()
     about_section = AboutSection.objects.first()
     skill_categories = SkillCategory.objects.all()
